@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Website</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="E:\Desktop\coffe shop\images/logo.png">
+  </head>
+  <body>
+    <!-- Header starts -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="E:\Desktop\coffe shop\images/logo.png" alt="" />
+      </a>
+
+      <div class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-cart-shopping" id="cart-icon" data-quantity="0"></i>
+        <div class="fas fa-search" id="search-icon"></div>
+        <div class="fas fa-bars" id="menu-icon"></div>
+      </div>
+
+      <!-- search box -->
+      <div class="search-box">
+        <input type="search" placeholder="search here..." id="search-input" />
+        <label for="search-input"></label>
+      </div>
+
+      <!-- Cart -->
+      <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Content -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- Buy Button -->
+        <button type="button" class="btn-buy">Pay Now</button>
+        <!-- Close Cart -->
+        <i class="fas fa-times" id="close-cart"></i>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Home section starts -->
+   <section class="home" id="home">
+      <!-- Swiper slides -->
+      <div class="swiper mySwiper home-swiper">
+        <div class="swiper-wrapper slides-con">
+          <!-- slide 1 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-1">
+              <h1>Fresh Coffee In The Morning</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-2">
+              <h1>The Best Coffee In Town</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="swiper-slide slide">
+            <div class="content bg-3">
+              <h1>Give It A Try, Enjoy</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+                eius autem tenetur corporis temporibus dolorum lorem, ipsum
+                dolor cat color.
+              </p>
+              <a href="#about" class="btn">Get Yours Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- About section starts -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>ABOUT</span> US</h1>
+
+      <div class="about-content">
+        <div class="image-con">
+          <img src="E:\Desktop\coffe shop\images/about-img.jpg" alt="" />
+        </div>
+        <div class="about-text">
+          <h2>What Makes <span>Our Coffee</span> Special?</h2>
+          <p>
+            What makes our coffee truly special is the combination of quality, care, and craftsmanship at every step of the process. We source only the finest Arabica and Robusta beans from sustainable farms, ensuring each bean is selected for its unique flavor profile. Roasted in small batches, our coffee is always fresh, delivering the best possible taste in every cup. Ethical sourcing is at the heart of what we do, partnering with farmers who use sustainable practices to support both the environment and their communities. Our expert roasters bring out the finest flavors, tailoring each roast to highlight the natural characteristics of the beans. With a wide variety of unique blends and single-origin options, there's a flavor for every palate. Combined with our dedication to innovation and barista craftsmanship, each cup of coffee offers a truly exceptional experience, making every sip unforgettable.
+          </p>
+          <br />
+          
+          <a href="#menu" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- Menu section starts -->
+    <section class="menu" id="menu">
+      <h1 class="heading">OUR <span>MENU</span></h1>
+
+      <div class="menu-con">
+        <!-- Menu 1 -->
+        <div class="menu-item product-box">
+          <div class="img-con">
+            <img src="images/menu-1.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Tasty And Healthy</h3>
+          <h2 class="item-price">299 <span class="prp">349</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+        <!-- Menu 2 -->
+        <div class="menu-item">
+          <div class="img-con">
+            <img src="images/menu-2.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Fresh Cappuccino</h3>
+          <h2 class="item-price">199 <span class="prp">249</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+        <!-- Menu 3 -->
+        <div class="menu-item">
+          <div class="img-con">
+            <img src="images/menu-3.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Tasty And Healthy</h3>
+          <h2 class="item-price">99 <span class="prp">149</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+        <!-- Menu 4 -->
+        <div class="menu-item">
+          <div class="img-con">
+            <img src="images/menu-4.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Tasty And Healthy</h3>
+          <h2 class="item-price">349<span class="prp">399</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+        <!-- Menu 5 -->
+        <div class="menu-item">
+          <div class="img-con">
+            <img src="images/menu-5.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Tasty And Healthy</h3>
+          <h2 class="item-price">129 <span class="prp">149</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+        <!-- Menu 6 -->
+        <div class="menu-item">
+          <div class="img-con">
+            <img src="images/menu-6.jpg" class="product-img" alt="" />
+          </div>
+          <h3 class="product-title">Tasty And Healthy</h3>
+          <h2 class="item-price">99 <span class="prp">149</span></h2>
+          <button class="btn add-cart">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section ends -->
+
+    <!-- Products section starts -->
+    <section class="products" id="products">
+      <h1 class="heading">OUR <span>PRODUCTS</span></h1>
+
+      <div class="products-con">
+        <div class="product-item">
+          <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="image-con">
+            <img src="images/prod-1.png" alt="" />
+          </div>
+          <h3 class="text-center">Fresh Coffee</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
+          <h2 class="item-price">999 <span class="prp">1499</span></h2>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="product-item">
+          <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="image-con">
+            <img src="images/prod-2.png" alt="" />
+          </div>
+          <h3 class="text-center">Fresh Coffee</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
+          <h2 class="item-price">899 <span class="prp">1299</span></h2>
+          <button class="btn">Add To Cart</button>
+        </div>
+        <div class="product-item">
+          <div class="icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="image-con">
+            <img src="images/prod-3.png" alt="" />
+          </div>
+          <h3 class="text-center">Fresh Coffee</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half"></i>
+          </div>
+          <h2 class="item-price">1599 <span class="prp">1999</span></h2>
+          <button class="btn">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Products section ends -->
+
+    <!-- Reviews section starts -->
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>CUSTOMER'S</span> REVIEWS</h1>
+
+      <div class="reviews-con">
+        <div class="review">
+          <i class="fas fa-quote-left-alt"></i>
+          <p>
+            "Best Coffee I’ve Ever Had!" I’ve been a coffee lover for years, and I can honestly say this is the best coffee I’ve ever tasted. The flavors are rich, bold, and perfectly balanced. I can tell that they really care about quality from the first sip to the last. I’ll never go back to regular coffee again!
+          </p>
+          <div class="img-con">
+            <img src="images/pic-1.png" alt="" />
+          </div>
+          <h2>James P</h2>
+        </div>
+        <div class="review">
+          <i class="fas fa-quote-left-alt"></i>
+          <p>
+            "Fresh and Delicious" I’m really impressed by how fresh the coffee tastes. It’s clear they roast in small batches, and it makes such a difference in flavor. Every cup is smooth and flavorful—absolutely worth it!
+          </p>
+          <div class="img-con">
+            <img src="images/pic-2.png" alt="" />
+          </div>
+          <h2>Emily R</h2>
+        </div>
+        <div class="review">
+          <i class="fas fa-quote-left-alt"></i>
+          <p>
+            "Variety and Quality in Every Cup" I love the variety they offer! Whether I’m in the mood for something light or dark, they have something that always satisfies. The single-origin options are my favorite—each one has such a distinct and amazing flavor.
+          </p>
+          <div class="img-con">
+            <img src="images/pic-3.png" alt="" />
+          </div>
+          <h2>Mark L</h2>
+        </div>
+      </div>
+    </section>
+    <!-- Review section ends -->
+
+    <!-- Contact section starts -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>CONTACT</span> US</h1>
+
+      <div class="row">
+        <form class="form" action="">
+          <h3>get in touch</h3>
+          <div class="input-box">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="name" />
+          </div>
+          <div class="input-box">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-box">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number" />
+          </div>
+          <input type="submit" class="btn" value="contact now" />
+        </form>
+      </div>
+    </section>
+    <!-- Contact section ends -->
+
+    <!-- Blogs section starts -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">OUR <span>BLOGS</span></h1>
+
+      <div class="blogs-con">
+        <div class="blog">
+          <div class="img-con">
+            <img src="images/blog-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2 class="title">Tasty and Refreshing Coffee</h2>
+            <span>By Admin / 17th May, 2024</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              maxime?
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="blog">
+          <div class="img-con">
+            <img src="images/blog-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2 class="title">Have a great cup of coffee</h2>
+            <span>By Admin / 23th Jun, 2024</span>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Sapiente, velit!
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="blog">
+          <div class="img-con">
+            <img src="images/blog-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h2 class="title">Our coffee does it's magic</h2>
+            <span>By Admin / 24th Aug, 2024</span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              ipsum.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs section ends -->
+
+    <!-- Footer starts -->
+    <section class="footer" id="footer">
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="links-con">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </div>
+      <p>
+        &copy; 2023 <span class="rights">Coffee Shop</span>, All Rights
+        Reserved!
+      </p>
+
+      <a href="#" class="to-top" id="to-top">
+        <i class="fas fa-long-arrow-up"></i>
+      </a>
+    </section>
+    <!-- Footer ends -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>-->
+
+    <!-- custom js file -->
+    <script src="script.js"></script> -->
+  </body>
+</html>
